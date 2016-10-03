@@ -20,7 +20,7 @@ This package makes it easy to send notifications using [Asterisk Manager Interfa
 You can install this package via composer:
 
 ``` bash
-composer require laravel-notification-channels/asterisk
+composer require enniel/laravel-asterisk-notification-channel
 ```
 
 Next add the service provider to your `config/app.php`:
