@@ -4,7 +4,7 @@ namespace NotificationChannels\Asterisk\Test;
 
 use NotificationChannels\Asterisk\AsteriskMessage;
 
-class AsteriskMessageTest extends \PHPUnit_Framework_TestCase
+class AsterisMessageTest extends \PHPUnit_Framework_TestCase
 {
     /** @test */
     public function it_can_construct_with_a_new_message()

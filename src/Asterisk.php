@@ -20,6 +20,7 @@ class Asterisk
     public function send(array $params = [])
     {
         $params['--pdu'] = true;
+
         return Artisan::call('ami:dongle:sms', $params);
     }
 }
