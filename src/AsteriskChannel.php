@@ -8,14 +8,14 @@ use Illuminate\Notifications\Notification;
 class AsteriskChannel
 {
     /**
-     * Sender
+     * Sender.
      *
      * @var \NotificationChannels\Asterisk\Asterisk
      */
     protected $asterisk;
 
     /**
-     * Channel constructor
+     * Channel constructor.
      *
      * @param \NotificationChannels\Asterisk\Asterisk $asterisk
      */
@@ -41,7 +41,7 @@ class AsteriskChannel
         }
 
         if ($message->toNotGiven()) {
-            if (!$to = $notifiable->routeNotificationFor('asterisk')) {
+            if (! $to = $notifiable->routeNotificationFor('asterisk')) {
                 throw CouldNotSendNotification::missingRecipient();
             }
             $message->to($to);
