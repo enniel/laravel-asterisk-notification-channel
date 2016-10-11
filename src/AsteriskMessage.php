@@ -2,8 +2,6 @@
 
 namespace NotificationChannels\Asterisk;
 
-use Illuminate\Support\Arr;
-
 class AsteriskMessage
 {
     /**
@@ -35,9 +33,8 @@ class AsteriskMessage
         return new static($content);
     }
 
-
     /**
-     * Notification content
+     * Notification content.
      *
      * @param $content
      *
@@ -51,7 +48,7 @@ class AsteriskMessage
     }
 
     /**
-     * Set device
+     * Set device.
      *
      * @param $device
      *
