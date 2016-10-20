@@ -7,11 +7,7 @@ class AsteriskMessage
     /**
      * @var array Params payload.
      */
-    public $payload = [
-        'device'  => null,
-        'number'  => null,
-        'message' => null,
-    ];
+    public $payload = [];
 
     /**
      * Message constructor.
@@ -82,7 +78,7 @@ class AsteriskMessage
      */
     public function toNotGiven()
     {
-        return array_key_exists('number', $this->payload);
+        return ! array_key_exists('number', $this->payload);
     }
 
     /**
